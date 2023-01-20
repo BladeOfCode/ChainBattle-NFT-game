@@ -14,7 +14,6 @@ describe("Greeter", function () {
     // wait until the transaction is mined
     await setGreetingTx.wait();
 
-    //evaluate the equal site.
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });

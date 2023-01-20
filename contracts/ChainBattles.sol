@@ -27,6 +27,7 @@ contract ChainBattles is ERC721URIStorage {
     uint256 rarity;
   }
 
+  //mapping Id to stats
   mapping(uint256 => Stats) public tokenIdToStats;
 
   constructor() ERC721("Chain Battles", "CB") {
